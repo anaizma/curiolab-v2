@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="wrap">
       <section className="hero">
-        <p className="kicker">Curiosity-first STEM • built by students • for students</p>
+        <p className="kicker">Curiosity-first STEM • shaping thinkers and makers • built for students</p>
 
         <h1 className="title">
           A hands-on engineering studio for{" "}
@@ -20,7 +20,15 @@ export default function Home() {
           <a className="btn ghost" href="#projects">Explore past builds</a>
         </div>
 
-
+        <div className="processStrip" aria-label="CurioLab process">
+          <span className="step">Ideate</span>
+          <span className="arrow">→</span>
+          <span className="step">Build</span>
+          <span className="arrow">→</span>
+          <span className="step">Debug</span>
+          <span className="arrow">→</span>
+          <span className="step">Demo Day</span>
+        </div>
 
         <div className="process">
           {["Learn tools", "Design", "Build", "Debug", "Demo"].map((s) => (
@@ -30,7 +38,7 @@ export default function Home() {
 
         <div className="stats">
           <div className="stat">
-            <div className="statNum">1:1</div>
+            <div className="statNum">1:1.5</div>
             <div className="statLabel">Mentor support</div>
           </div>
           <div className="stat">

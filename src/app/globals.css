@@ -9,6 +9,22 @@ body {
     radial-gradient(900px 600px at 30% 100%, rgba(83,240,197,.18), transparent 55%),
     linear-gradient(180deg, #f7fbff 0%, #fff6db 55%, #f7fbff 100%);
   color: #0b1220;
+  position: relative;
+}
+
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;                 /* lighter */
+  filter: blur(0.25px);
+  background-size: 760px 760px;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'><g fill='none' stroke='%230b1220' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round' opacity='0.55'><path d='M70 120c44-34 82-34 126 0'/><path d='M70 146c44-34 82-34 126 0'/><path d='M620 120c34-26 62-26 96 0'/><path d='M620 144c34-26 62-26 96 0'/><!-- ROBOT --><path d='M140 360c0-18 14-32 32-32h92c18 0 32 14 32 32v92c0 18-14 32-32 32h-92c-18 0-32-14-32-32z'/><path d='M170 360h124'/><path d='M190 392h18'/><path d='M240 392h18'/><path d='M205 430c18 14 44 14 62 0'/><path d='M192 328v-18'/><path d='M244 328v-18'/><path d='M178 328c12-18 44-18 56 0'/><path d='M210 328c12-18 44-18 56 0'/><!-- CAR/TRUCK --><path d='M560 420h150c18 0 30 10 34 26l12 46h-220l10-46c4-16 14-26 14-26z'/><path d='M580 420l22-44h92l24 44'/><path d='M735 492h42'/><circle cx='610' cy='504' r='18'/><circle cx='730' cy='504' r='18'/><path d='M592 504h36'/><path d='M712 504h36'/><path d='M640 388h34'/><path d='M684 388h26'/><!-- BLOCKS --><path d='M120 660l54-32 54 32-54 32z'/><path d='M174 628v64'/><path d='M120 660v64l54 32 54-32v-64'/><path d='M310 640l54-32 54 32-54 32z'/><path d='M364 608v64'/><path d='M310 640v64l54 32 54-32v-64'/><!-- WRENCH --><path d='M650 670c-10-18-6-34 10-46l18-14c16-12 38-8 50 8l12 16c12 16 8 38-8 50l-18 14c-16 12-38 8-50-8'/><path d='M676 628l22 28'/><path d='M742 690l22 28'/><!-- CIRCUIT NODES --><circle cx='520' cy='260' r='4'/><circle cx='540' cy='280' r='4'/><circle cx='560' cy='260' r='4'/><path d='M520 260h40'/><path d='M540 280l20-20'/></g></svg>");
+
+  transform: rotate(-0.8deg) scale(1.02);
+  transform-origin: center;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -206,4 +222,28 @@ a:hover { text-decoration: none; }
   border: 1px solid rgba(11,18,32,.14);
   font-weight: 800;
   font-size: 13px;
+}
+
+.processStrip{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.step{
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  border: 2px dashed rgba(11,18,32,.22);
+  box-shadow: 0 8px 18px rgba(11,18,32,.08);
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+
+.arrow{
+  font-weight: 900;
+  opacity: .55;
 }
