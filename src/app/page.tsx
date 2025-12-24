@@ -62,7 +62,7 @@ export default function Home() {
           <article className="card">
             <h3>Remote-Controlled Car</h3>
             <p>Mechanics + electronics + iteration. Build it, drive it, improve it.</p>
-            <span className="tag">embedded • design</span>
+            <span className="tag">code • design</span>
           </article>
 
           <article className="card">
@@ -74,7 +74,7 @@ export default function Home() {
           <article className="card">
             <h3>Lock Box</h3>
             <p>Mechanism + code + debugging until it works every time.</p>
-            <span className="tag">systems • debugging</span>
+            <span className="tag">coding • debugging</span>
           </article>
         </div>
       </section>
