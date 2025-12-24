@@ -1,16 +1,22 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <header className="nav">
       <div className="navInner">
-        <div className="brand">CurioLab</div>
+        <Link href="/" className="brand">
+          CurioLab
+        </Link>
 
         <nav className="navLinks">
-          <a href="#projects">Projects</a>
-          <a href="#get-involved">Get involved</a>
-          <a href="#about">About</a>
-          <a href="/contact" className="navCta">Contact</a>
+          <Link href="/projects">Projects</Link>
+          <Link href="/get-involved">Get involved</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact" className="navCta">
+            Contact
+          </Link>
         </nav>
       </div>
     </header>

@@ -261,3 +261,70 @@ a:hover { text-decoration: none; }
   font-weight: 900;
   opacity: .55;
 }
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+.h1{
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #0b1220;
+}
+
+.p{
+  margin-top: 10px;
+  max-width: 70ch;
+  color: rgba(11, 18, 32, 0.72);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.gridCards{
+  margin-top: 22px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px){
+  .gridCards{ grid-template-columns: 1fr; }
+}
+
+.cardLink{
+  display:block;
+  text-decoration:none;
+  color: inherit;
+}
+
+.card.pad{
+  padding: 18px;
+}
+
+.cardTitle{
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.cardDesc{
+  margin-top: 6px;
+  color: rgba(11, 18, 32, 0.68);
+}
+
+.cardHint{
+  margin-top: 12px;
+  font-weight: 800;
+  color: rgba(11, 18, 32, 0.75);
+}
+
+.note{
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(11,18,32,0.10);
+}
+
