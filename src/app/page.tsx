@@ -6,7 +6,7 @@ export default function Home() {
 
         <h1 className="title">
           A hands-on engineering studio for{" "}
-          <span className="accent">curious builders</span>.
+          <span className="accentHero">curious builders</span>.
         </h1>
 
         <p className="subtitle">

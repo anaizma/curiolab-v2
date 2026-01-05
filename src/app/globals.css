@@ -1,6 +1,12 @@
 html, body { height: 100%; margin: 0; }
 * { box-sizing: border-box; }
 
+:root {
+  --accent: #5B6CFF;
+  --accent-2: #2F3CFF;
+  --accent-soft: rgba(91, 108, 255, 0.14);
+}
+
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
@@ -63,7 +69,14 @@ a:hover { text-decoration: none; }
   letter-spacing: -0.02em;
 }
 
-.accent { color: #ffd447; }
+.accent {
+  color: var(--accent);
+}
+
+.accentHero {
+  color: #6B75E6;
+}
+
 
 .subtitle {
   margin-top: 16px;
@@ -145,17 +158,40 @@ a:hover { text-decoration: none; }
 .card p { margin: 10px 0 0; color: rgba(255,255,255,.74); line-height: 1.5; }
 
 .tag {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 12px;
-  color: rgba(255,255,255,.7);
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(0,0,0,.18);
-  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
   border-radius: 999px;
+
+  background: var(--accent-soft);
+  color: rgba(91, 108, 255, 0.9);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(91, 108, 255, 0.22);
 }
 
-.miniLink { display: inline-block; margin-top: 14px; font-weight: 800; color: #ffd447; }
+.card:hover .tag {
+  background: rgba(91, 108, 255, 0.18);
+  border-color: rgba(91, 108, 255, 0.32);
+}
+
+
+
+.miniLink {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.miniLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .footer { margin-top: 70px; padding: 10px 0 30px; }
 .footerLine { height: 1px; background: rgba(255,255,255,.12); }
@@ -211,10 +247,11 @@ a:hover { text-decoration: none; }
 .navCta {
   padding: 8px 14px;
   border-radius: 999px;
-  background: #ffd447;     /* yellow */
-  color: #0b1220 !important;
+  background: rgba(91, 108, 255, 0.22);
+  color: var(--accent);
   font-weight: 900;
-  border: 1px solid rgba(11,18,32,.12);
+  border: 1.5px solid rgba(91, 108, 255, 0.35);
+  background: var(--accent-soft);
 }
 
 /* Mobile */
@@ -327,4 +364,10 @@ a:hover { text-decoration: none; }
   background: rgba(255,255,255,0.55);
   border: 1px solid rgba(11,18,32,0.10);
 }
+
+
+
+
+
+
 
