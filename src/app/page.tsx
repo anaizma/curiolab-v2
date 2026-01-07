@@ -62,62 +62,81 @@ export default function Home() {
           <p>Where every cohort learns core skills, then applies them to a semester-long build.</p>
         </div>
 
-        <div className="grid">
-          <Link href="/projects" className="cardLink">
-          <article className="card">
-            <h3>Remote-Controlled Car</h3>
-            <div className="cardMedia">
-            <Image
-              src="/projects/alarmclock.jpg"
-              alt="Remote-Controlled Car project"
-              width={900}
-              height={500}
-              className="cardMediaImgStatic"
-              priority
-            />
+        <div className="featureStack">
+  <Link href="/projects/remote-controlled-car" className="featureCard">
+    <div className="featureMedia">
+      <Image
+        src="/projects/alarmclock.jpg"
+        alt="Remote-Controlled Car project"
+        width={1200}
+        height={800}
+        className="featureImg"
+        priority
+      />
+    </div>
 
-            </div>
-            <p>Mechanics + electronics + iteration. Build it, drive it, improve it.</p>
-            <span className="tag">code • design</span>
-          </article>
-          </Link>
+    <div className="featureBody">
+      <h3 className="featureTitle">Remote-Controlled Car</h3>
+      <p className="featureDesc">
+        Mechanics + electronics + iteration. Build it, drive it, improve it.
+      </p>
 
-          <Link href="/projects" className="cardLink">
-          <article className="card">
-            <h3>Alarm Clock</h3>
-            <div className="cardMedia">
-            <Image
-              src="/projects/alarmclock.jpg"
-              alt="Alarm Clock project"
-              width={900}
-              height={500}
-              className="cardMediaImgStatic"
-            />
+      <div className="featureMeta">
+        <span className="tag">code • design</span>
+        <span className="featureLink">View project →</span>
+      </div>
+    </div>
+  </Link>
 
-            </div>
-            <p>Inputs, outputs, timing, and making something reliable.</p>
-            <span className="tag">electronics • logic</span>
-          </article>
-          </Link>
+  <Link href="/projects/alarm-clock" className="featureCard">
+    <div className="featureMedia">
+      <Image
+        src="/projects/alarmclock.jpg"
+        alt="Alarm Clock project"
+        width={1200}
+        height={800}
+        className="featureImg"
+      />
+    </div>
 
-          <Link href="/projects" className="cardLink">
-          <article className="card">
-            <h3>Lock Box</h3>
-            <div className="cardMedia">
-            <Image
-              src="/projects/safebox.jpg"
-              alt="Lock Box project"
-              width={900}
-              height={500}
-              className="cardMediaImgStatic"
-            />
+    <div className="featureBody">
+      <h3 className="featureTitle">Alarm Clock</h3>
+      <p className="featureDesc">
+        Inputs, outputs, timing, and making something reliable.
+      </p>
 
-            </div>
-            <p>Mechanism + code + debugging until it works every time.</p>
-            <span className="tag">coding • debugging</span>
-          </article>
-          </Link>
-        </div>
+      <div className="featureMeta">
+        <span className="tag">electronics • logic</span>
+        <span className="featureLink">View project →</span>
+      </div>
+    </div>
+  </Link>
+
+  <Link href="/projects/lock-box" className="featureCard">
+    <div className="featureMedia">
+      <Image
+        src="/projects/safebox.jpg"
+        alt="Lock Box project"
+        width={1200}
+        height={800}
+        className="featureImg"
+      />
+    </div>
+
+    <div className="featureBody">
+      <h3 className="featureTitle">Lock Box</h3>
+      <p className="featureDesc">
+        Mechanism + code + debugging until it works every time.
+      </p>
+
+      <div className="featureMeta">
+        <span className="tag">coding • debugging</span>
+        <span className="featureLink">View project →</span>
+      </div>
+    </div>
+  </Link>
+  </div>
+
       </section>
 
       <section id="get-involved" className="section">
