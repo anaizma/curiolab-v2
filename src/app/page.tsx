@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -48,7 +50,7 @@ export default function Home() {
             <div className="statLabel">Semester build</div>
           </div>
           <div className="stat">
-            <div className="statNum">Build → Debug</div>
+            <div className="statNum">Build → Debug → Create</div>
             <div className="statLabel">Learn by doing</div>
           </div>
         </div>
@@ -61,6 +63,7 @@ export default function Home() {
         </div>
 
         <div className="grid">
+          <Link href="/projects" className="cardLink">
           <article className="card">
             <h3>Remote-Controlled Car</h3>
             <div className="cardMedia">
@@ -77,7 +80,9 @@ export default function Home() {
             <p>Mechanics + electronics + iteration. Build it, drive it, improve it.</p>
             <span className="tag">code • design</span>
           </article>
+          </Link>
 
+          <Link href="/projects" className="cardLink">
           <article className="card">
             <h3>Alarm Clock</h3>
             <div className="cardMedia">
@@ -93,7 +98,9 @@ export default function Home() {
             <p>Inputs, outputs, timing, and making something reliable.</p>
             <span className="tag">electronics • logic</span>
           </article>
+          </Link>
 
+          <Link href="/projects" className="cardLink">
           <article className="card">
             <h3>Lock Box</h3>
             <div className="cardMedia">
@@ -109,6 +116,7 @@ export default function Home() {
             <p>Mechanism + code + debugging until it works every time.</p>
             <span className="tag">coding • debugging</span>
           </article>
+          </Link>
         </div>
       </section>
 
