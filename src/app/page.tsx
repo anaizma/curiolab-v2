@@ -56,10 +56,37 @@ export default function Home() {
         </div>
       </section>
 
+            {/* What we do Section */}
+      <section className="what">
+        <div className="whatInner">
+          <div className="whatLeft">
+            <h2 className="whatTitle">Who Are We</h2>
+            <div className="whatRule" />
+          </div>
+
+          <div className="whatRight">
+            <p className="whatP">
+              CurioLab is a hands-on engineering studio where students learn tools, then apply them
+              to real builds. We teach the engineering design process through weekly sessions that
+              prioritize iteration, creativity, and confidence.
+            </p>
+
+            <p className="whatP">
+              We run cohort-based programs with mentor support, guiding students from ideation to
+              debugging to Demo Day. Our focus is project-based learning that feels exciting,
+              structured, and empowering—especially for students who haven’t had access before.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
       <section id="projects" className="section">
         <div className="sectionHead">
-          <h2>Built through iteration</h2>
-          <p>Where every cohort learns core skills, then applies them to a semester-long build.</p>
+          <h2>Featured Projects</h2>
+          <p>Where every cohort learns core skills, built through iteration</p>
         </div>
 
         <div className="featureStack">

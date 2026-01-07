@@ -1,29 +1,76 @@
-html, body { height: 100%; margin: 0; }
-* { box-sizing: border-box; }
+/* =========================
+   0) Base + Theme Variables
+   ========================= */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --accent: #5B6CFF;
   --accent-2: #2F3CFF;
   --accent-soft: rgba(91, 108, 255, 0.14);
+
+  --text: #0b1220;
+  --text-muted: rgba(11, 18, 32, 0.72);
+
+  --card-border: rgba(11, 18, 32, 0.14);
+  --card-shadow: 0 10px 30px rgba(11, 18, 32, 0.08);
 }
+
+/* =========================
+   1) Global Background
+   ========================= */
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0b1220;
+
+  /* Your main gradient background */
   background:
     radial-gradient(900px 500px at 20% 0%, rgba(77,163,255,.22), transparent 55%),
     radial-gradient(700px 500px at 80% 15%, rgba(255,212,71,.28), transparent 55%),
     radial-gradient(900px 600px at 30% 100%, rgba(83,240,197,.18), transparent 55%),
     linear-gradient(180deg, #f7fbff 0%, #fff6db 55%, #f7fbff 100%);
-  color: #0b1220;
+
   position: relative;
+  background: #f7fbff; /* fallback */
+
+
 }
 
+/* Background doodles layer */
 body::before{
   content:"";
   position: fixed;
   inset: 0;
+  z-index: -2;
   pointer-events: none;
-  opacity: 0.07;                 /* lighter */
+
+  /* This is the background gradient layer */
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(77,163,255,.18), transparent 60%),
+    radial-gradient(900px 520px at 80% 20%, rgba(255,212,71,.22), transparent 60%),
+    radial-gradient(1000px 650px at 35% 85%, rgba(83,240,197,.14), transparent 65%),
+    linear-gradient(180deg, #f7fbff 0%, #fff6db 55%, #f7fbff 100%);
+}
+
+/* Doodles + sparkles layer stays fixed too */
+body::after{
+  content:"";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  /* keep your doodles */
+  opacity: 0.07;
   filter: blur(0.25px);
   background-size: 760px 760px;
   background-repeat: repeat;
@@ -31,28 +78,28 @@ body::before{
 
   transform: rotate(-0.8deg) scale(1.02);
   transform-origin: center;
+  mix-blend-mode: multiply;
 }
 
-/*Adding in sparkles and all*/
-body::after{
-  content:"";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.09;                 /* controls sprinkles only */
-  background-size: 420px 420px;
-  background-repeat: repeat;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420'><g fill='none' stroke='%230b1220' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' opacity='0.55'><path d='M64 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z'/><path d='M320 84l3 8 8 3-8 3-3 8-3-8-8-3 8-3z'/><circle cx='98' cy='178' r='2.5'/><circle cx='110' cy='190' r='2.5'/><circle cx='122' cy='176' r='2.5'/><circle cx='300' cy='220' r='2.5'/><circle cx='312' cy='232' r='2.5'/><circle cx='324' cy='218' r='2.5'/><path d='M72 300c0-10 8-18 18-18s18 8 18 18-8 18-18 18-18-8-18-18z'/><path d='M82 300h8'/><path d='M110 300h8'/><path d='M90 312c10 8 18 8 28 0'/><path d='M280 310c0-10 8-18 18-18s18 8 18 18-8 18-18 18-18-8-18-18z'/><path d='M290 310h8'/><path d='M318 310h8'/><path d='M298 322c10 8 18 8 28 0'/><path d='M170 110c10-8 20-8 30 0'/><path d='M186 96v28'/><path d='M190 96v28'/><path d='M210 250l10 0'/><path d='M215 245l0 10'/></g></svg>");
-  mix-blend-mode: multiply;
-  filter: blur(0.15px);
-}
+/* =========================
+   2) Links + Layout Wrapper
+   ========================= */
 
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: none; }
 
-.wrap { max-width: 1100px; margin: 0 auto; padding: 64px 20px 40px; }
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 20px 40px;
+}
+
+/* =========================
+   3) Hero Section
+   ========================= */
 
 .hero { padding: 40px 0 10px; }
+
 .kicker {
   display: inline-block;
   font-size: 12px;
@@ -69,14 +116,7 @@ a:hover { text-decoration: none; }
   letter-spacing: -0.02em;
 }
 
-.accent {
-  color: var(--accent);
-}
-
-.accentHero {
-  color: #6B75E6;
-}
-
+.accentHero { color: #6B75E6; }
 
 .subtitle {
   margin-top: 16px;
@@ -87,15 +127,15 @@ a:hover { text-decoration: none; }
   color: rgba(11, 18, 32, .78);
 }
 
-.ctaRow { 
-  margin-top: 22px; 
-  display: flex; 
-  gap: 12px; 
-  flex-wrap: wrap; 
+.ctaRow {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   margin-bottom: 32px;
-
 }
 
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -107,13 +147,51 @@ a:hover { text-decoration: none; }
   border: 1px solid rgba(11, 18, 32, .14);
 }
 
-.btn.ghost {
-  background: rgba(255,255,255,.7);
-  color: #0b1220;
-}
-
+/* Only using ghost currently; keep consistent */
 .btn.ghost { background: rgba(255,255,255,.06); }
 
+/* Process pills */
+.processStrip{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.step{
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  border: 2px dashed rgba(11,18,32,.22);
+  box-shadow: 0 8px 18px rgba(11,18,32,.08);
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+
+.arrow{
+  font-weight: 900;
+  opacity: .55;
+}
+
+.process {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.7);
+  border: 1px solid rgba(11,18,32,.14);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* Stats */
 .stats {
   margin-top: 26px;
   display: grid;
@@ -129,52 +207,117 @@ a:hover { text-decoration: none; }
   backdrop-filter: blur(8px);
 }
 
-.statNum { 
-  font-weight: 900; 
-  font-size: 25px; 
+.statNum {
+  font-weight: 900;
+  font-size: 25px;
   letter-spacing: -0.01em;
-
-}
-.statLabel { 
-  margin-top: 4px; 
-  font-size: 14px; 
-  color: grey; 
 }
 
-.section { margin-top: 56px; }
+.statLabel {
+  margin-top: 4px;
+  font-size: 14px;
+  color: grey;
+}
+
+/* =========================
+   4) Sections + Headings
+   ========================= */
+
+.section { 
+  margin-top: 96px; 
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
 .sectionHead h2 {
   margin: 0;
-  font-size: 28px;
-  letter-spacing: -0.01em;
+  font-size: clamp(30px, 4.8vw, 54px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
+
 .sectionHead p {
-  margin: 10px 0 0;
-  color: rgba(11, 18, 32, .72);
-  max-width: 720px;
+  margin: 12px auto 0;
+  max-width: 640px;
+  font-size: 18px;
+  color: rgba(11, 18, 32, 0.72);
 }
 
-.grid { margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-
-.card {
-  border: 1px solid rgba(11, 18, 32, .14);
-  background:
-    linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(135deg, rgba(77,163,255,.45), rgba(255,212,71,.45)) border-box;
-  border-radius: 22px;
-  padding: 18px;
-  box-shadow: 0 10px 30px rgba(11, 18, 32, .08);
-  transition: transform .15s ease, box-shadow .15s ease;
+/*What we Are section styling*/
+/* ===== What we do (2-column editorial section) ===== */
+.what {
+  margin-top: 90px;
+  padding: 26px 0;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(11, 18, 32, .12);
+.whatInner {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr;
+  gap: 48px;
+  align-items: start;
 }
+
+.whatLeft {
+  padding-top: 8px;
+}
+
+.whatTitle {
+  margin: 0;
+  font-size: clamp(30px, 4.8vw, 54px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.whatRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.whatP {
+  margin: 0;
+  color: rgba(11, 18, 32, 0.72);
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 52ch;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .whatInner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .whatRule {
+    width: 180px;
+  }
+
+  .whatRight {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .whatP {
+    font-size: 17px;
+    max-width: 70ch;
+  }
+}
+
+
+
+/* =========================
+   5) Project Feature Cards (Horizontal)
+   ========================= */
 
 .featureStack {
-  margin-top: 18px;
+  margin-top: 56px;
   display: grid;
-  gap: 18px;
+  gap: 28px;
 }
 
 .featureCard {
@@ -183,17 +326,17 @@ a:hover { text-decoration: none; }
   gap: 18px;
   align-items: center;
 
-  border: 1px solid rgba(11, 18, 32, .14);
+  border: 1px solid var(--card-border);
   border-radius: 24px;
   padding: 18px;
 
-  background: rgba(255,255,255,.60);
-  backdrop-filter: blur(10px);
-
-  box-shadow: 0 10px 30px rgba(11, 18, 32, .08);
+  background: rgba(255,255,255,.45);
+  box-shadow: var(--card-shadow);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
   color: inherit;
   text-decoration: none;
+  backdrop-filter: blur(12px);
+
 }
 
 .featureCard:hover {
@@ -237,7 +380,7 @@ a:hover { text-decoration: none; }
 
 .featureDesc {
   margin: 0;
-  color: rgba(11, 18, 32, .72);
+  color: var(--text-muted);
   line-height: 1.6;
   max-width: 62ch;
 }
@@ -255,78 +398,67 @@ a:hover { text-decoration: none; }
   color: var(--accent);
 }
 
-/* Mobile: stack image on top */
-@media (max-width: 900px) {
-  .featureCard {
-    grid-template-columns: 1fr;
-  }
-  .featureMedia {
-    height: 200px;
-  }
-  .featureMeta {
-    justify-content: flex-start;
-    gap: 12px;
-  }
-}
-
-.card h3 { margin: 0; font-size: 18px; font-weight: 800; }
-.card p { margin: 10px 0 0; color: rgba(11,18,32,.72); line-height: 1.5; }
-
-.cardMedia {
-  position: relative;
-  width: 100%;
-  height: 250px; /* adjust to taste */
-  border-radius: 14px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(140, 140, 140, 0.18);
-  margin-top: 12px;
-}
-
-.cardMediaImg {
-  object-fit: cover;
-  transform: scale(1.02);
-  transition: transform 180ms ease, filter 180ms ease;
-  filter: saturate(0.95) contrast(1.02);
-}
-
-.cardMediaImgStatic{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-
-/* nice hover */
-.card:hover .cardMediaImg {
-  transform: scale(1.06);
-}
-
+/* Tag pill */
 .tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-
   padding: 6px 12px;
   border-radius: 999px;
-
   background: var(--accent-soft);
   color: rgba(91, 108, 255, 0.9);
-
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
   border: 1px solid rgba(91, 108, 255, 0.22);
 }
 
-.card:hover .tag {
-  background: rgba(91, 108, 255, 0.18);
-  border-color: rgba(91, 108, 255, 0.32);
+/* Mobile feature cards */
+@media (max-width: 900px) {
+  .wrap { padding-top: 40px; }
+
+  .stats { grid-template-columns: 1fr; }
+
+  .featureCard { grid-template-columns: 1fr; }
+  .featureMedia { height: 200px; }
+  .featureMeta { justify-content: flex-start; gap: 12px; }
 }
 
+/* =========================
+   6) Simple Grid Cards (Get involved)
+   ========================= */
 
+.grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
 
+.card {
+  border: 1px solid var(--card-border);
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, rgba(77,163,255,.45), rgba(255,212,71,.45)) border-box;
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: var(--card-shadow);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(11, 18, 32, .12);
+}
+
+.card h3 { margin: 0; font-size: 18px; font-weight: 800; }
+.card p { margin: 10px 0 0; color: var(--text-muted); line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* Links inside cards */
 .miniLink {
   display: inline-block;
   margin-top: 14px;
@@ -339,17 +471,17 @@ a:hover { text-decoration: none; }
   text-underline-offset: 3px;
 }
 
+/* =========================
+   7) Footer
+   ========================= */
+
 .footer { margin-top: 70px; padding: 10px 0 30px; }
 .footerLine { height: 1px; background: rgba(255,255,255,.12); }
 .footerText { margin-top: 14px; color: rgba(11, 18, 32, .60); font-size: 13px; }
 
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr; }
-  .wrap { padding-top: 40px; }
-}
-
-/* ===== Navbar ===== */
+/* =========================
+   8) Navbar (matches your component)
+   ========================= */
 
 .nav {
   position: sticky;
@@ -393,127 +525,12 @@ a:hover { text-decoration: none; }
 .navCta {
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(91, 108, 255, 0.22);
+  background: var(--accent-soft);
   color: var(--accent);
   font-weight: 900;
   border: 1.5px solid rgba(91, 108, 255, 0.35);
-  background: var(--accent-soft);
 }
 
-/* Mobile */
 @media (max-width: 700px) {
   .navLinks { gap: 12px; font-size: 13px; }
 }
-
-.process {
-  margin-top: 16px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.chip {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.7);
-  border: 1px solid rgba(11,18,32,.14);
-  font-weight: 800;
-  font-size: 13px;
-}
-
-.processStrip{
-  margin-top: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.step{
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.72);
-  border: 2px dashed rgba(11,18,32,.22);
-  box-shadow: 0 8px 18px rgba(11,18,32,.08);
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: -0.01em;
-}
-
-.arrow{
-  font-weight: 900;
-  opacity: .55;
-}
-
-.container{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 64px 20px;
-}
-
-.h1{
-  font-size: clamp(32px, 4vw, 52px);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: #0b1220;
-}
-
-.p{
-  margin-top: 10px;
-  max-width: 70ch;
-  color: rgba(11, 18, 32, 0.72);
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.gridCards{
-  margin-top: 22px;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media (max-width: 900px){
-  .gridCards{ grid-template-columns: 1fr; }
-}
-
-.cardLink{
-  display:block;
-  text-decoration:none;
-  color: inherit;
-}
-
-.card.pad{
-  padding: 18px;
-}
-
-.cardTitle{
-  font-weight: 900;
-  font-size: 18px;
-}
-
-.cardDesc{
-  margin-top: 6px;
-  color: rgba(11, 18, 32, 0.68);
-}
-
-.cardHint{
-  margin-top: 12px;
-  font-weight: 800;
-  color: rgba(11, 18, 32, 0.75);
-}
-
-.note{
-  margin-top: 18px;
-  padding: 14px 16px;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(11,18,32,0.10);
-}
-
-
-
-
-
-
-
