@@ -15,7 +15,7 @@ const PROJECTS: Record<string, { title: string; blurb: string }> = {
   },
 };
 
-export default async function ProjectSlugPage({ params }: Props) {
+export default function ProjectSlugPage({ params }: Props) {
   const project = PROJECTS[params.slug];
 
   if (!project) {

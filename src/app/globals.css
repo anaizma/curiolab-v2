@@ -81,12 +81,20 @@ a:hover { text-decoration: none; }
 .subtitle {
   margin-top: 16px;
   max-width: 720px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 1.6;
   color: rgba(11, 18, 32, .78);
 }
 
-.ctaRow { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
+.ctaRow { 
+  margin-top: 22px; 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+  margin-bottom: 32px;
+
+}
 
 .btn {
   display: inline-flex;
@@ -121,8 +129,17 @@ a:hover { text-decoration: none; }
   backdrop-filter: blur(8px);
 }
 
-.statNum { font-weight: 900; font-size: 20px; }
-.statLabel { margin-top: 4px; font-size: 13px; color: grey; }
+.statNum { 
+  font-weight: 900; 
+  font-size: 25px; 
+  letter-spacing: -0.01em;
+
+}
+.statLabel { 
+  margin-top: 4px; 
+  font-size: 14px; 
+  color: grey; 
+}
 
 .section { margin-top: 56px; }
 .sectionHead h2 {
@@ -156,6 +173,37 @@ a:hover { text-decoration: none; }
 
 .card h3 { margin: 0; font-size: 18px; font-weight: 800; }
 .card p { margin: 10px 0 0; color: rgba(255,255,255,.74); line-height: 1.5; }
+
+.cardMedia {
+  position: relative;
+  width: 100%;
+  height: 250px; /* adjust to taste */
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(140, 140, 140, 0.18);
+  margin-top: 12px;
+}
+
+.cardMediaImg {
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 180ms ease, filter 180ms ease;
+  filter: saturate(0.95) contrast(1.02);
+}
+
+.cardMediaImgStatic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+
+/* nice hover */
+.card:hover .cardMediaImg {
+  transform: scale(1.06);
+}
 
 .tag {
   display: inline-flex;

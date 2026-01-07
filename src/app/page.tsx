@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="wrap">
@@ -61,18 +63,49 @@ export default function Home() {
         <div className="grid">
           <article className="card">
             <h3>Remote-Controlled Car</h3>
+            <div className="cardMedia">
+            <Image
+              src="/projects/alarmclock.jpg"
+              alt="Remote-Controlled Car project"
+              width={900}
+              height={500}
+              className="cardMediaImgStatic"
+              priority
+            />
+
+            </div>
             <p>Mechanics + electronics + iteration. Build it, drive it, improve it.</p>
             <span className="tag">code • design</span>
           </article>
 
           <article className="card">
             <h3>Alarm Clock</h3>
+            <div className="cardMedia">
+            <Image
+              src="/projects/alarmclock.jpg"
+              alt="Alarm Clock project"
+              width={900}
+              height={500}
+              className="cardMediaImgStatic"
+            />
+
+            </div>
             <p>Inputs, outputs, timing, and making something reliable.</p>
             <span className="tag">electronics • logic</span>
           </article>
 
           <article className="card">
             <h3>Lock Box</h3>
+            <div className="cardMedia">
+            <Image
+              src="/projects/safebox.jpg"
+              alt="Lock Box project"
+              width={900}
+              height={500}
+              className="cardMediaImgStatic"
+            />
+
+            </div>
             <p>Mechanism + code + debugging until it works every time.</p>
             <span className="tag">coding • debugging</span>
           </article>
