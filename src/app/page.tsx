@@ -50,7 +50,7 @@ export default function Home() {
             <div className="statLabel">Semester build</div>
           </div>
           <div className="stat">
-            <div className="statNum">Build → Debug → Create</div>
+            <div className="statNum">Idea → Innovation</div>
             <div className="statLabel">Learn by doing</div>
           </div>
         </div>
