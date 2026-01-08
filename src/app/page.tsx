@@ -178,7 +178,7 @@ export default function Home() {
         <p>
         Join a cohort, learn hands-on skills each week, and finish the semester with newly learned skills.
         </p>
-        <a className="miniLink" href="/contact">Apply →</a>
+        <a className="miniLink" href="/students">Apply →</a>
       </article>
 
       <article className="card">
@@ -187,7 +187,7 @@ export default function Home() {
         Coach 1–2 students through challenges, guide troubleshooting, and help them grow confidence
         through real problem-solving.
         </p>
-        <a className="miniLink" href="/contact">Mentor with us →</a>
+        <a className="miniLink" href="/mentors">Mentor with us →</a>
       </article>
 
       <article className="card">
@@ -196,7 +196,7 @@ export default function Home() {
         Fund materials and program access, sponsor a cohort, or support scholarships so more students
         can participate.
         </p>
-        <a className="miniLink" href="/contact">Partner →</a>
+        <a className="miniLink" href="/sponsor-support">Partner →</a>
       </article>
     </div>
   </section>
