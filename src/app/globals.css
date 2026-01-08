@@ -550,3 +550,128 @@ a:hover { text-decoration: none; }
 @media (max-width: 700px) {
   .navLinks { gap: 12px; font-size: 13px; }
 }
+
+/* ===== Projects page hero ===== */
+.projHero {
+  padding: 28px 0 10px;
+}
+
+.projKicker {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(11, 18, 32, .62);
+}
+
+.projTitle {
+  margin: 14px 0 0;
+  margin-left: 15px;
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 1.02;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #0b1220;
+}
+
+/*Text under heading*/
+.projLead {
+  margin-top: 14px;
+  margin-left: 15px;
+  max-width: 78ch;
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(11, 18, 32, .78);
+}
+
+.projPills {
+  margin-top: 18px;
+  margin-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projPill {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(11,18,32,.14);
+  box-shadow: 0 8px 18px rgba(11,18,32,.06);
+  font-weight: 800;
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+.projFlow {
+  margin-top: 26px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.projFlowItem {
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(11,18,32,.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 26px rgba(11,18,32,.08);
+  min-width: 200px;
+}
+
+.projFlowTop {
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.projFlowBottom {
+  margin-top: 4px;
+  color: rgba(11,18,32,.70);
+  font-size: 14px;
+}
+
+.projFlowArrow {
+  font-weight: 900;
+  opacity: .45;
+}
+
+.projCtas {
+  margin-top: 22px;
+  margin-left: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.projList {
+  margin-top: 34px;
+}
+
+.projGridTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: #0b1220;
+}
+
+.projGridSub {
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, .72);
+  max-width: 70ch;
+}
+
+/* Mobile: make flow stack nicely */
+@media (max-width: 700px) {
+  .projFlowItem {
+    min-width: unset;
+    width: 100%;
+  }
+  .projFlowArrow {
+    display: none;
+  }
+}

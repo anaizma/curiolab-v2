@@ -90,7 +90,7 @@ export default function Home() {
         </div>
 
         <div className="featureStack">
-  <Link href="/projects/remote-controlled-car" className="featureCard">
+  <Link href="/projects" className="featureCard">
     <div className="featureMedia">
       <Image
         src="/projects/alarmclock.jpg"
@@ -115,7 +115,7 @@ export default function Home() {
     </div>
   </Link>
 
-  <Link href="/projects/alarm-clock" className="featureCard">
+  <Link href="/projects" className="featureCard">
     <div className="featureMedia">
       <Image
         src="/projects/alarmclock.jpg"
@@ -139,7 +139,7 @@ export default function Home() {
     </div>
   </Link>
 
-  <Link href="/projects/lock-box" className="featureCard">
+  <Link href="/projects" className="featureCard">
     <div className="featureMedia">
       <Image
         src="/projects/safebox.jpg"
