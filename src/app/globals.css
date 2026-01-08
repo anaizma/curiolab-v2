@@ -689,3 +689,348 @@ a:hover { text-decoration: none; }
     height: 220px;
   }
 }
+
+/* =========================
+   Students page
+   ========================= */
+
+.studentsWrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 20px 72px;
+}
+
+.studentsHero{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.studentsTitle{
+  margin: 0;
+  font-size: clamp(38px, 4.6vw, 62px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.studentsLead{
+  margin: 12px 0 0;
+  max-width: 70ch;
+  color: rgba(11, 18, 32, 0.78);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.studentsCtaRow{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.studentsTiny{
+  margin-top: 10px;
+  color: rgba(11, 18, 32, 0.60);
+  font-size: 13px;
+}
+
+/* Quick facts card */
+.studentsFacts{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 0 14px 40px rgba(11, 18, 32, 0.08);
+}
+
+.studentsFactsKicker{
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(11, 18, 32, 0.55);
+  font-weight: 800;
+}
+
+.studentsFactsTitle{
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.studentsFactsSub{
+  margin-top: 6px;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.studentsFactsGrid{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.studentsFact{
+  border: 1px solid rgba(11, 18, 32, 0.10);
+  background: rgba(255,255,255,0.55);
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+
+.studentsFactWide{
+  grid-column: 1 / -1;
+}
+
+.studentsFactLabel{
+  font-size: 12px;
+  color: rgba(11, 18, 32, 0.55);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.studentsFactValue{
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(11, 18, 32, 0.90);
+}
+
+/* Sections */
+.studentsSection{
+  margin-top: 44px;
+}
+
+.studentsSectionHead h2{
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.studentsSectionHead p{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  max-width: 78ch;
+  line-height: 1.7;
+}
+
+/* Learn grid */
+.studentsLearnGrid{
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.studentsCard{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 16px 16px;
+  box-shadow: 0 12px 32px rgba(11, 18, 32, 0.07);
+}
+
+.studentsCard h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.studentsCard p{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.65;
+}
+
+/* Support callouts */
+.studentsSupportRow{
+  margin-top: 14px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.studentsCallout{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 16px;
+}
+
+.studentsCallout h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.studentsCallout p{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.65;
+}
+
+/* Timeline */
+.studentsTimeline{
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.studentsStepCard{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 0 12px 32px rgba(11, 18, 32, 0.07);
+}
+
+.studentsStepTop{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.studentsStepBadge{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: rgba(91, 108, 255, 0.92);
+  border: 1px solid rgba(91, 108, 255, 0.22);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.studentsStepCard h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.studentsStepCard p{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.65;
+}
+
+/* Apply section */
+.studentsApply{
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.studentsApplyText{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 18px;
+}
+
+.studentsApplyText h2{
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.studentsApplyText p{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.7;
+}
+
+.studentsApplyList{
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: rgba(11, 18, 32, 0.78);
+  line-height: 1.8;
+}
+
+.studentsApplyNote{
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  background: rgba(255,255,255,0.55);
+  border-radius: 22px;
+  padding: 16px;
+}
+
+.studentsApplyNoteTitle{
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.studentsApplyNoteText{
+  margin: 10px 0 0;
+  color: rgba(11, 18, 32, 0.72);
+  line-height: 1.65;
+}
+
+/* Buttons: make sure primary exists (you already have .btn + .btn.ghost) */
+.btn.primary{
+  background: rgba(91, 108, 255, 0.18);
+  color: var(--accent-2);
+  border: 1px solid rgba(91, 108, 255, 0.32);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .studentsHero{
+    grid-template-columns: 1fr;
+  }
+  .studentsLearnGrid{
+    grid-template-columns: 1fr;
+  }
+  .studentsSupportRow{
+    grid-template-columns: 1fr;
+  }
+  .studentsTimeline{
+    grid-template-columns: 1fr;
+  }
+  .studentsApply{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* What you'll learn – image strip */
+.learnImageStrip{
+  margin: 18px 0 26px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.learnImageStrip img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,0.14);
+  background: rgba(255,255,255,0.4);
+}
+
+/* Mobile */
+@media (max-width: 800px){
+  .learnImageStrip{
+    grid-template-columns: 1fr;
+  }
+  .learnImageStrip img{
+    height: 200px;
+  }
+}
+
+
+
+

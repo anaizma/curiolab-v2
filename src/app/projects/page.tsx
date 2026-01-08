@@ -24,7 +24,7 @@ const projects = [
     desc: "Mechanics + electronics + iteration.",
     description:
       "Students assembled a remote-controlled vehicle by integrating motors, power, and control logic. Through repeated testing and iteration, they improved responsiveness, mechanical stability, and overall performance.",
-    img: "/projects/alarmclock.jpg",
+    img: "/projects/workwithcircuit.jpg",
   },
 ];
 

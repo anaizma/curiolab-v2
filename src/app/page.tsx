@@ -93,7 +93,7 @@ export default function Home() {
   <Link href="/projects" className="featureCard">
     <div className="featureMedia">
       <Image
-        src="/projects/alarmclock.jpg"
+        src="/projects/workwithcircuit.jpg"
         alt="Remote-Controlled Car project"
         width={1200}
         height={800}
