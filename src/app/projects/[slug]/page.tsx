@@ -11,11 +11,11 @@ const PROJECTS: Record<string, { title: string; blurb: string }> = {
   },
   "lock-box": {
     title: "Lock Box",
-    blurb: "Mechanism + code + debugging until it works every time.",
+    blurb: "Mechanism + code  until it works every time.",
   },
 };
 
-export default function ProjectSlugPage({ params }: Props) {
+export default async function ProjectSlugPage({ params }: Props) {
   const project = PROJECTS[params.slug];
 
   if (!project) {
