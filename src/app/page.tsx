@@ -167,31 +167,40 @@ export default function Home() {
       </section>
 
       <section id="get-involved" className="section">
-        <div className="sectionHead">
-          <h2>Get involved</h2>
-          <p>Students, Parents, Mentors, and Sponsors.</p>
-        </div>
+      <div className="sectionHead">
+        <h2>Get involved</h2>
+        <p>Students, mentors, and supporters—there’s a place for you here.</p>
+      </div>
 
-        <div className="grid">
-          <article className="card">
-            <h3>Students</h3>
-            <p>Join a cohort, learn skills weekly, and ship a final build.</p>
-            <a className="miniLink" href="/contact">Apply →</a>
-          </article>
+      <div className="grid">
+      <article className="card">
+        <h3>Students</h3>
+        <p>
+        Join a cohort, learn hands-on skills each week, and finish the semester with newly learned skills.
+        </p>
+        <a className="miniLink" href="/contact">Apply →</a>
+      </article>
 
-          <article className="card">
-            <h3>Parents</h3>
-            <p>Structured, supportive, and designed to build confidence.</p>
-            <a className="miniLink" href="/contact">Ask a question →</a>
-          </article>
+      <article className="card">
+        <h3>Mentors</h3>
+        <p>
+        Coach 1–2 students through challenges, guide troubleshooting, and help them grow confidence
+        through real problem-solving.
+        </p>
+        <a className="miniLink" href="/contact">Mentor with us →</a>
+      </article>
 
-          <article className="card">
-            <h3>Mentors & Sponsors</h3>
-            <p>Help students build. Fund kits and access for underrepresented learners.</p>
-            <a className="miniLink" href="/contact">Partner →</a>
-          </article>
-        </div>
-      </section>
+      <article className="card">
+        <h3>Sponsor & Support</h3>
+        <p>
+        Fund materials and program access, sponsor a cohort, or support scholarships so more students
+        can participate.
+        </p>
+        <a className="miniLink" href="/contact">Partner →</a>
+      </article>
+    </div>
+  </section>
+
 
       <footer className="footer">
         <div className="footerLine" />

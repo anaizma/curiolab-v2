@@ -460,6 +460,8 @@ a:hover { text-decoration: none; }
   padding: 18px;
   box-shadow: var(--card-shadow);
   transition: transform .15s ease, box-shadow .15s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -485,6 +487,11 @@ a:hover { text-decoration: none; }
 .miniLink:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.card .miniLink {
+  margin-top: auto;        /* pushes link to bottom */
+  padding-top: 14px;
 }
 
 /* =========================

@@ -37,7 +37,7 @@ export default function ProjectsPage() {
         <p className="projectsSubtitle">
           Each semester, students build toward a final project over ~12 weeks—learning code fundamentals,
           circuits & electronics, CAD/3D modeling, laser cutting, 3D printing, and rapid prototyping.
-          Mentors guide every step from first build to Demo Day.
+          Mentors guide every step from first build to Demo Day, making sure no student is left behind.
         </p>
       </header>
 
