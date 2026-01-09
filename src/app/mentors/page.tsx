@@ -1,40 +1,255 @@
-import Link from "next/link";
+// src/app/mentors/page.tsx
+import Image from "next/image";
 
 export default function MentorsPage() {
   return (
-    <main className="container">
-      <h1 className="h1">Mentors</h1>
-      <p className="p">
-        Mentors coach students through challenges—asking great questions, guiding debugging,
-        and helping them develop confidence through real problem-solving.
+    <main className="mentorsWrap">
+      {/* HERO */}
+      <header className="mentorsHero">
+        <div className="mentorsHeroText">
+          <h1 className="mentorsH1">Mentors</h1>
+          <p className="mentorsLead">
+            The best way to truly understand something is to teach it. Mentoring with CurioLab is a
+            hands-on leadership experience where you guide students through problem-solving,
+            debugging, and design thinking while sharpening your own technical foundation.
+          </p>
+
+          <div className="mentorsCtaRow">
+            <a
+              className="btn primary"
+              href="https://forms.gle/mT3m2GQgSE4hM56v7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply now →
+            </a>
+            <a className="btn ghost" href="#what-to-expect">
+              What to expect
+            </a>
+          </div>
+
+          <div className="mentorsQuickFacts" aria-label="Mentor quick facts">
+            <div className="mentorsFact">
+              <div className="mentorsFactNum">13 week</div>
+              <div className="mentorsFactLabel">Semester Long Commitment</div>
+            </div>
+            <div className="mentorsFact">
+              <div className="mentorsFactNum">Sat 1 –3:30 PM</div>
+              <div className="mentorsFactLabel">Program Session Hours</div>
+            </div>
+            <div className="mentorsFact">
+              <div className="mentorsFactNum"> think[box]</div>
+              <div className="mentorsFactLabel">Case Western Reserve University</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mentorsHeroMedia">
+          {/* Put a real image here: public/mentors/hero.jpg */}
+          <Image
+            src="/projects/spage2.jpg"
+            alt="CurioLab mentors working with students"
+            width={1400}
+            height={1000}
+            className="mentorsHeroImg"
+            priority
+          />
+        </div>
+      </header>
+
+      {/* WHY MENTOR */}
+      <section className="mentorsSection" id="what-to-expect" aria-label="Why mentor">
+        <div className="mentorsSectionHead">
+          <h2>Why mentor with CurioLab?</h2>
+          <p>
+            You’re not giving answers—you’re coaching students to think like engineers. You’ll get
+            specialized training, support from the CurioLab team, and a community that helps you
+            grow as a mentor and technologist.
+          </p>
+        </div>
+
+        <div className="mentorsGrid3">
+          <article className="mentorsCard">
+            <h3>Grow your skills</h3>
+            <p>
+              Strengthen your fundamentals by explaining concepts clearly and debugging alongside
+              students.
+            </p>
+          </article>
+
+          <article className="mentorsCard">
+            <h3>Lead with impact</h3>
+            <p>
+              Help expand access to engineering for middle and high school students—especially those
+              who haven’t had opportunities before.
+            </p>
+          </article>
+
+          <article className="mentorsCard">
+            <h3>Get supported</h3>
+            <p>
+              Training, structure, and a mentor community so you’re never doing this alone.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* IMAGES ROW */}
+      <section className="mentorsImageStrip" aria-label="Mentor photos">
+        {/* Put these in public/mentors/ */}
+        <Image
+          src="/projects/spage2.jpg"
+          alt="Mentors coaching during a session"
+          width={1200}
+          height={800}
+          className="mentorsStripImg"
+        />
+        <Image
+          src="/projects/spage2.jpg"
+          alt="Students collaborating with mentor guidance"
+          width={1200}
+          height={800}
+          className="mentorsStripImg"
+        />
+        <Image
+          src="/projects/spage2.jpg"
+          alt="Students presenting at Demo Day"
+          width={1200}
+          height={800}
+          className="mentorsStripImg"
+        />
+      </section>
+
+      {/* WHAT IT LOOKS LIKE */}
+      <section className="mentorsSection" aria-label="What mentoring looks like">
+        <div className="mentorsSectionHead">
+          <h2>What mentoring looks like</h2>
+          <p>
+            Mentors coach 1–2 students through a semester-long engineering journey—helping them
+            troubleshoot, iterate, and communicate their work.
+          </p>
+        </div>
+
+        <div className="mentorsTwoCol">
+          <div className="mentorsChecklist">
+            <div className="mentorsCheck">Coach 1–2 students through challenges</div>
+            <div className="mentorsCheck">Guide debugging and structured problem-solving</div>
+            <div className="mentorsCheck">Support code + electronics + fabrication workflows</div>
+            <div className="mentorsCheck">Help students prep for Demo Day presentation</div>
+          </div>
+
+          <div className="mentorsInfoCard">
+            <div className="mentorsInfoTitle">Time commitment</div>
+            <div className="mentorsInfoRow">
+              <span className="mentorsInfoK">Training</span>
+              <span className="mentorsInfoV">1–2 hours/week</span>
+            </div>
+            <div className="mentorsInfoRow">
+              <span className="mentorsInfoK">Project sessions</span>
+              <span className="mentorsInfoV">Saturdays, 1:00–4:00 PM</span>
+            </div>
+            <div className="mentorsInfoRow">
+              <span className="mentorsInfoK">Location</span>
+              <span className="mentorsInfoV">Sears think[box], CWRU</span>
+            </div>
+            <div className="mentorsInfoNote">
+              If your schedule doesn’t align, reach out—future opportunities may be available.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO SHOULD APPLY */}
+      <section className="mentorsSection" aria-label="Who should apply">
+        <div className="mentorsSectionHead">
+          <h2>Who should apply</h2>
+          <p>
+            This role is for college students. Prior experience is helpful, but not required—we
+            provide training and resources.
+          </p>
+        </div>
+
+        <div className="mentorsChips" aria-label="Helpful experience areas">
+          <span className="chip">Arduino / Python / Java</span>
+          <span className="chip">Circuits + sensors</span>
+          <span className="chip">3D modeling + CAD</span>
+          <span className="chip">Laser cutting</span>
+          <span className="chip">3D printing</span>
+          <span className="chip">Helping others learn</span>
+        </div>
+
+        <div className="mentorsNote">
+          Mentors are expected to have intermediate-level knowledge in at least one area (coding,
+          electronics, or CAD/fabrication). All majors are welcome to apply.
+        </div>
+      </section>
+
+      {/* QUOTES */}
+<section className="mentorsSection" aria-label="Mentor quotes">
+  <div className="mentorsSectionHead">
+    <h2>What past mentors say</h2>
+    <p>Real growth happens when you explain, troubleshoot, and iterate with someone else.</p>
+  </div>
+
+  <div className="mentorsQuotes">
+    <blockquote className="mentorsQuote">
+      “Mentoring pushed me to explain ideas clearly and troubleshoot in real time. I became more
+      confident as an engineer and communicator.”
+    </blockquote>
+
+    <blockquote className="mentorsQuote">
+      “Watching students go from stuck to confident was the most rewarding part. You learn just as
+      much as they do.”
+    </blockquote>
+
+    <blockquote className="mentorsQuote">
+      “The training + structure made it easy to jump in. I loved seeing students’ ideas turn into
+      something real by Demo Day.”
+    </blockquote>
+  </div>
+</section>
+
+{/* APPLY */}
+<section className="mentorsApply" aria-label="Apply">
+  <div className="mentorsApplyGrid">
+    {/* LEFT */}
+    <div className="mentorsApplyCard">
+      <h2>Apply to be a mentor</h2>
+      <p>
+        Applications are open now for Spring 2026. If you want to teach, lead, and learn alongside a
+        community that supports you—apply below.
       </p>
 
-      <div className="note">
-        <strong>What mentors do:</strong>
-        <ul style={{ marginTop: 10, marginBottom: 0, paddingLeft: 18, lineHeight: 1.7 }}>
-          <li>Support 1–2 students throughout the cohort</li>
-          <li>Help students break down problems instead of giving answers</li>
-          <li>Guide debugging, iteration, and design decisions</li>
-          <li>Encourage clear thinking, documentation, and presentation skills</li>
-        </ul>
+      <div className="mentorsApplyRow">
+        <a
+          className="btn primary"
+          href="https://forms.gle/mT3m2GQgSE4hM56v7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Apply now →
+        </a>
+        <span className="mentorsDeadline">Deadline: 1/16/2026</span>
       </div>
 
-      <div className="note">
-        <strong>Ideal for:</strong>
-        <ul style={{ marginTop: 10, marginBottom: 0, paddingLeft: 18, lineHeight: 1.7 }}>
-          <li>Students or professionals who like teaching & troubleshooting</li>
-          <li>Anyone excited by hands-on engineering and mentorship</li>
-          <li>People who want to support access to technical learning</li>
-        </ul>
+      <div className="mentorsApplyHint">
       </div>
+    </div>
 
-      <p className="p" style={{ marginTop: 18 }}>
-        Curious what students work on? Start with the project gallery.
-      </p>
+    {/* RIGHT */}
+    <div className="mentorsApplyMedia" aria-label="Mentor session photo">
+      <Image
+        src="/projects/spage2.jpg"
+        alt="CurioLab mentors working with students at a session"
+        width={1200}
+        height={900}
+        className="mentorsApplyImg"
+      />
+    </div>
+  </div>
+</section>
 
-      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 10 }}>
-        <Link className="btn ghost" href="/projects">Explore projects →</Link>
-      </div>
+
     </main>
   );
 }
