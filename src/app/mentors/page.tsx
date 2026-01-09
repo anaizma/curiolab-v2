@@ -115,7 +115,7 @@ export default function MentorsPage() {
           className="mentorsStripImg"
         />
         <Image
-          src="/projects/demday.jpg"
+          src="/projects/mentorfirstpic.jpg"
           alt="Students presenting at Demo Day"
           width={1200}
           height={800}
@@ -190,7 +190,7 @@ export default function MentorsPage() {
       {/* QUOTES */}
 <section className="mentorsSection" aria-label="Mentor quotes">
   <div className="mentorsSectionHead">
-    <h2>What past mentors say</h2>
+    <h2>What Past Mentors Say</h2>
     <p>Real growth happens when you explain, troubleshoot, and iterate with someone else.</p>
   </div>
 
@@ -217,7 +217,7 @@ export default function MentorsPage() {
   <div className="mentorsApplyGrid">
     {/* LEFT */}
     <div className="mentorsApplyCard">
-      <h2>Apply to be a mentor</h2>
+      <h2>Apply To Be A Mentor</h2>
       <p>
         Applications are open now for Spring 2026. If you want to teach, lead, and learn alongside a
         community that supports you, apply below!
@@ -242,7 +242,7 @@ export default function MentorsPage() {
     {/* RIGHT */}
     <div className="mentorsApplyMedia" aria-label="Mentor session photo">
       <Image
-        src="/projects/mentorfirstpic.jpg"
+        src="/projects/demday.jpg"
         alt="CurioLab mentors working with students at a session"
         width={1200}
         height={900}
