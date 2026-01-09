@@ -233,6 +233,54 @@ export default function SponsorSupportPage() {
         </div>
       </section>
 
+      {/* CURRENT SPONSORS */}
+<section className="sponsorSection" aria-label="Current sponsors">
+  <div className="sponsorSectionHead">
+    <h2>Our current sponsors</h2>
+    <p>
+      CurioLab is made possible by partners who believe in hands-on engineering
+      education and expanding access for students.
+    </p>
+  </div>
+
+  <div className="currentSponsors">
+    {/* Gelfand STEM Center */}
+    <div className="currentSponsorCard">
+      <div className="currentSponsorLogo">
+        <img
+          src="/projects/gelfand.png"
+          alt="Gelfand STEM Center logo"
+        />
+      </div>
+      <div className="currentSponsorText">
+        <h3>Gelfand STEM Center</h3>
+        <p>
+          Supporting student innovation and STEM outreach by funding materials,
+          mentorship, and program development.
+        </p>
+      </div>
+    </div>
+
+    {/* think[box] */}
+    <div className="currentSponsorCard">
+      <div className="currentSponsorLogo">
+        <img
+          src="/projects/thinkbox.png"
+          alt="Sears think[box] logo"
+        />
+      </div>
+      <div className="currentSponsorText">
+        <h3>Sears think[box]</h3>
+        <p>
+          Providing access to fabrication tools, workspace, and a creative
+          environment where CurioLab sessions come to life.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
       {/* CTA */}
       <section className="sponsorCta" aria-label="Sponsor call to action">
         <div className="sponsorCtaCard">
