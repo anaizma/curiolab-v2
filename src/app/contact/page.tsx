@@ -185,7 +185,7 @@ export default function ContactPage() {
 
             <div className="contactEmailRow">
               <span className="contactEmailPill">aizma@acuriolab.org</span>
-              <span className="contactEmailSub">We reply within a few days.</span>
+              <span className="contactEmailSub">We'll reply within a few days.</span>
             </div>
           </div>
         </aside>
