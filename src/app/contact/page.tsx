@@ -66,7 +66,7 @@ export default function ContactPage() {
       <header className="contactHeader">
         <h1 className="contactTitle">Contact</h1>
         <p className="contactSubtitle">
-          Questions about joining a cohort, mentoring, or sponsoring? Send a message and we’ll get back soon.
+          Questions about joining a cohort, mentoring, or sponsoring? Send a message and we’ll get back to you soon!
         </p>
         <div className="contactDivider" />
       </header>
@@ -89,12 +89,12 @@ export default function ContactPage() {
             <div className="contactRow2">
               <label className="contactField">
                 <span className="contactLabel">First name</span>
-                <input name="firstName" className="contactInput" placeholder="Ana" />
+                <input name="firstName" className="contactInput" placeholder="First" />
               </label>
 
               <label className="contactField">
                 <span className="contactLabel">Last name</span>
-                <input name="lastName" className="contactInput" placeholder="Izma" />
+                <input name="lastName" className="contactInput" placeholder="Last" />
               </label>
             </div>
 
@@ -106,7 +106,7 @@ export default function ContactPage() {
 
               <label className="contactField">
                 <span className="contactLabel">I’m reaching out as…</span>
-                <select name="role" className="contactSelect" defaultValue="student">
+                <select name="role" className="contactSelect" defaultValue="parent">
                   <option value="student">Student</option>
                   <option value="mentor">Mentor</option>
                   <option value="sponsor">Sponsor / Supporter</option>
@@ -118,7 +118,7 @@ export default function ContactPage() {
 
             <label className="contactField">
               <span className="contactLabel">Subject</span>
-              <input name="subject" className="contactInput" placeholder="How do I apply?" />
+              <input name="subject" className="contactInput" placeholder="Subject" />
             </label>
 
             <label className="contactField">
@@ -126,7 +126,7 @@ export default function ContactPage() {
               <textarea
                 name="message"
                 className="contactTextarea"
-                placeholder="Tell us what you’re looking for and any deadlines you have."
+                placeholder="Tell us what you’re looking for and any details you have!"
                 rows={6}
               />
             </label>
@@ -135,9 +135,6 @@ export default function ContactPage() {
               <button className="btn primary" type="submit" disabled={status.type === "sending"}>
                 {status.type === "sending" ? "Sending…" : "Send message →"}
               </button>
-              <span className="contactHint">
-                Prefer quick links? Use the buttons on the right.
-              </span>
             </div>
           </form>
         </div>
@@ -175,17 +172,13 @@ export default function ContactPage() {
 
             <div className="contactInfoGrid">
               <div className="contactInfoItem">
-                <div className="contactInfoK">Typical sessions</div>
+                <div className="contactInfoK">Sessions Schedule</div>
                 <div className="contactInfoV">Saturdays, 1:00–4:00 PM</div>
               </div>
               <div className="contactInfoItem">
-                <div className="contactInfoK">Program length</div>
+                <div className="contactInfoK">Program Duration</div>
                 <div className="contactInfoV">12 weeks (Spring cohort)</div>
               </div>
-            </div>
-
-            <div className="contactNote">
-              Want to add a map? We can embed it here later.
             </div>
           </div>
         </aside>
@@ -194,7 +187,7 @@ export default function ContactPage() {
       <section className="contactFaq" aria-label="FAQ">
         <div className="contactFaqHead">
           <h2 className="contactH2">FAQ</h2>
-          <p className="contactP">A few quick answers we can expand later.</p>
+          <p className="contactP">Some frequently asked questions:</p>
         </div>
 
         <div className="contactFaqGrid">
@@ -213,7 +206,7 @@ export default function ContactPage() {
 
           <details className="contactFaqItem">
             <summary>How can sponsors support CurioLab?</summary>
-            <p>Sponsorship can fund kits, scholarships, mentor training, or a full cohort. We’ll add a sponsor packet soon.</p>
+            <p>Sponsorship can fund kits, scholarships, mentor training, or a full cohort.</p>
           </details>
         </div>
       </section>
