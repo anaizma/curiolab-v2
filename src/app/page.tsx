@@ -34,12 +34,6 @@ export default function Home() {
           <span className="step">Demo Day</span>
         </div>
 
-        <div className="process">
-          {["Learn tools", "Design", "Build", "Debug", "Demo"].map((s) => (
-            <div key={s} className="chip">{s}</div>
-          ))}
-        </div>
-
         <div className="stats">
           <div className="stat">
             <div className="statNum">1:1.5</div>
