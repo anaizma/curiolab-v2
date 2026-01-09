@@ -33,6 +33,7 @@ export default function Navbar() {
         {/* Desktop links */}
         <nav className="navLinks navLinksDesktop">
           <Link href="/">Home</Link>
+          <Link href="/our-team">Our Team</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/mentors">Mentors</Link>
           <Link href="/students">Students</Link>
