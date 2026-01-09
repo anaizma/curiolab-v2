@@ -39,7 +39,7 @@ export default function MentorsPage() {
             </div>
             <div className="mentorsFact">
               <div className="mentorsFactNum"> think[box]</div>
-              <div className="mentorsFactLabel">Case Western Reserve University</div>
+              <div className="mentorsFactLabel">Located at Case Western Reserve University</div>
             </div>
           </div>
         </div>
@@ -60,11 +60,11 @@ export default function MentorsPage() {
       {/* WHY MENTOR */}
       <section className="mentorsSection" id="what-to-expect" aria-label="Why mentor">
         <div className="mentorsSectionHead">
-          <h2>Why mentor with CurioLab?</h2>
+          <h2>Why Mentor With CurioLab?</h2>
           <p>
-            You’re not giving answers—you’re coaching students to think like engineers. You’ll get
-            specialized training, support from the CurioLab team, and a community that helps you
-            grow as a mentor and technologist.
+            Mentoring with CurioLab is an opportunity to turn your technical skills into real impact while sharpening them in the process. 
+            You’ll help middle and high school students build confidence in engineering by guiding them through hands-on projects—watching them 
+            go from “I don’t know where to start” to independently solving problems they once thought were out of reach.
           </p>
         </div>
 
@@ -72,23 +72,26 @@ export default function MentorsPage() {
           <article className="mentorsCard">
             <h3>Grow your skills</h3>
             <p>
-              Strengthen your fundamentals by explaining concepts clearly and debugging alongside
-              students.
+              As a mentor, you grow alongside your students. Sharpen your technical understanding, 
+              strengthen how you communicate complex ideas, and deepen your approach to design, debugging, and problem-solving, skills 
+              that directly translate to internships and engineering teams.
             </p>
           </article>
 
           <article className="mentorsCard">
             <h3>Lead with impact</h3>
             <p>
-              Help expand access to engineering for middle and high school students—especially those
-              who haven’t had opportunities before.
+             Help expand access to engineering for middle and high school students, especially those who haven’t had these opportunities 
+             before, and play a role in shaping the next generation of technologists, leaders, and mentors.
             </p>
           </article>
 
           <article className="mentorsCard">
             <h3>Get supported</h3>
             <p>
-              Training, structure, and a mentor community so you’re never doing this alone.
+              CurioLab also invests in you. Get structured training, weekly materials, and ongoing support from the team, 
+              so you’re never unprepared. Share ideas, troubleshoots challenges together, and builds leadership skills in a 
+              low-pressure, high-impact environment.
             </p>
           </article>
         </div>
@@ -229,7 +232,7 @@ export default function MentorsPage() {
         >
           Apply now →
         </a>
-        <span className="mentorsDeadline">Deadline: 1/16/2026</span>
+        <span className="mentorsDeadline">Deadline: 1/20/2026</span>
       </div>
 
       <div className="mentorsApplyHint">
