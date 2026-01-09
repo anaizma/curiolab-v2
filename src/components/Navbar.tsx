@@ -11,9 +11,10 @@ export default function Navbar() {
         </Link>
 
         <nav className="navLinks">
+          <Link href="/">Home</Link>
           <Link href="/projects">Projects</Link>
-          <Link href="/get-involved">Get involved</Link>
-          <Link href="/about">About</Link>
+          <Link href="/mentors">Mentors</Link>
+          <Link href="/students">Students</Link>
           <Link href="/contact" className="navCta">
             Contact
           </Link>

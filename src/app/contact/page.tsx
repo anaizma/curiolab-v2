@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 type Status =
   | { type: "idle" }
@@ -11,6 +11,8 @@ type Status =
 
 export default function ContactPage() {
   const [status, setStatus] = useState<Status>({ type: "idle" });
+
+  const canSubmit = useMemo(() => status.type !== "sending", [status.type]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -63,45 +65,50 @@ export default function ContactPage() {
 
   return (
     <main className="contactWrap">
-      <header className="contactHeader">
+      <header className="contactHero">
         <h1 className="contactTitle">Contact</h1>
         <p className="contactSubtitle">
-          Questions about joining a cohort, mentoring, or sponsoring? Send a message and we’ll get back to you soon!
+          Questions about joining a cohort, mentoring, or sponsoring? Send a message and we’ll get back to you soon.
         </p>
-        <div className="contactDivider" />
       </header>
 
       <section className="contactGrid" aria-label="Contact content">
+        {/* FORM */}
         <div className="contactCard contactFormCard">
-          <h2 className="contactH2">Send us a message</h2>
-          <p className="contactP">
-            We typically respond within a few days. If your message is time-sensitive, include your deadline.
-          </p>
+          <div className="contactCardTop">
+            <div>
+              <h2 className="contactH2">Send us a message</h2>
+              <p className="contactP">
+                We typically respond within a few days!
+              </p>
+            </div>
 
-          {status.type === "success" && (
-            <div className="contactAlert success">{status.message}</div>
-          )}
-          {status.type === "error" && (
-            <div className="contactAlert error">{status.message}</div>
-          )}
+            <div className="contactMini">
+              <div className="contactMiniDot" />
+              <div className="contactMiniText">Inbox: @acuriolab.org</div>
+            </div>
+          </div>
+
+          {status.type === "success" && <div className="contactAlert success">{status.message}</div>}
+          {status.type === "error" && <div className="contactAlert error">{status.message}</div>}
 
           <form className="contactForm" onSubmit={onSubmit}>
             <div className="contactRow2">
               <label className="contactField">
                 <span className="contactLabel">First name</span>
-                <input name="firstName" className="contactInput" placeholder="First" />
+                <input name="firstName" className="contactInput" placeholder="First" autoComplete="given-name" />
               </label>
 
               <label className="contactField">
                 <span className="contactLabel">Last name</span>
-                <input name="lastName" className="contactInput" placeholder="Last" />
+                <input name="lastName" className="contactInput" placeholder="Last" autoComplete="family-name" />
               </label>
             </div>
 
             <div className="contactRow2">
               <label className="contactField">
                 <span className="contactLabel">Email</span>
-                <input name="email" className="contactInput" placeholder="you@email.com" type="email" />
+                <input name="email" className="contactInput" placeholder="you@email.com" type="email" autoComplete="email" />
               </label>
 
               <label className="contactField">
@@ -127,58 +134,58 @@ export default function ContactPage() {
                 name="message"
                 className="contactTextarea"
                 placeholder="Tell us what you’re looking for and any details you have!"
-                rows={6}
+                rows={7}
               />
             </label>
 
             <div className="contactActions">
-              <button className="btn primary" type="submit" disabled={status.type === "sending"}>
+              <button className="btn primary" type="submit" disabled={!canSubmit}>
                 {status.type === "sending" ? "Sending…" : "Send message →"}
               </button>
+
+              <div className="contactTinyNote">
+                By submitting, your message will be emailed to our team inbox.
+              </div>
             </div>
           </form>
         </div>
 
-        <aside className="contactAside" aria-label="Contact info">
+        {/* RIGHT COLUMN */}
+        <aside className="contactAside" aria-label="Quick paths">
           <div className="contactCard">
             <h2 className="contactH2">Quick paths</h2>
-            <p className="contactP">
-              If you already know what you’re looking for, these pages are faster than email.
-            </p>
+            <p className="contactP">If you already know what you’re looking for, these pages are faster than email.</p>
 
-            <div className="contactQuickLinks">
-              <Link className="contactQuickLink" href="/students">
-                <div className="contactQuickTitle">Students</div>
-                <div className="contactQuickDesc">Program info + apply</div>
+            <div className="contactQuickGrid">
+              <Link className="contactQuickCard" href="/students">
+                <div className="contactQuickKicker">Students</div>
+                <div className="contactQuickTitle">Program Info + Apply</div>
+                <div className="contactQuickArrow">→</div>
               </Link>
 
-              <Link className="contactQuickLink" href="/mentors">
-                <div className="contactQuickTitle">Mentors</div>
-                <div className="contactQuickDesc">Role + time commitment</div>
+              <Link className="contactQuickCard" href="/mentors">
+                <div className="contactQuickKicker">Mentors</div>
+                <div className="contactQuickTitle">Role + Time Commitment</div>
+                <div className="contactQuickArrow">→</div>
               </Link>
 
-              <Link className="contactQuickLink" href="/sponsor-support">
-                <div className="contactQuickTitle">Sponsor & Support</div>
-                <div className="contactQuickDesc">Partner with CurioLab</div>
+              <Link className="contactQuickCard" href="/sponsor-support">
+                <div className="contactQuickKicker">Sponsors</div>
+                <div className="contactQuickTitle">Partner With CurioLab</div>
+                <div className="contactQuickArrow">→</div>
               </Link>
             </div>
           </div>
 
-          <div className="contactCard">
-            <h2 className="contactH2">Location</h2>
+          <div className="contactCard contactAltCard">
+            <h2 className="contactH2">Prefer email?</h2>
             <p className="contactP">
-              Sessions are hosted at <strong>Sears think[box]</strong> at <strong>Case Western Reserve University</strong>.
+              You can also reach us directly. Include a short subject line and any deadlines.
             </p>
 
-            <div className="contactInfoGrid">
-              <div className="contactInfoItem">
-                <div className="contactInfoK">Sessions Schedule</div>
-                <div className="contactInfoV">Saturdays, 1:00–4:00 PM</div>
-              </div>
-              <div className="contactInfoItem">
-                <div className="contactInfoK">Program Duration</div>
-                <div className="contactInfoV">12 weeks (Spring cohort)</div>
-              </div>
+            <div className="contactEmailRow">
+              <span className="contactEmailPill">aizma@acuriolab.org</span>
+              <span className="contactEmailSub">We reply within a few days.</span>
             </div>
           </div>
         </aside>
