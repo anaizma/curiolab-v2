@@ -34,7 +34,7 @@ export default function MentorsPage() {
               <div className="mentorsFactLabel">Semester Long Commitment</div>
             </div>
             <div className="mentorsFact">
-              <div className="mentorsFactNum">Sat 1 PM – 4 PM</div>
+              <div className="mentorsFactNum">Sat 1PM – 4 PM</div>
               <div className="mentorsFactLabel">Program Session Hours</div>
             </div>
             <div className="mentorsFact">
