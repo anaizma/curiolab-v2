@@ -34,7 +34,7 @@ export default function MentorsPage() {
               <div className="mentorsFactLabel">Semester Long Commitment</div>
             </div>
             <div className="mentorsFact">
-              <div className="mentorsFactNum">Sat 1 –3:30 PM</div>
+              <div className="mentorsFactNum">Sat 1 PM – 4 PM</div>
               <div className="mentorsFactLabel">Program Session Hours</div>
             </div>
             <div className="mentorsFact">
@@ -126,19 +126,20 @@ export default function MentorsPage() {
       {/* WHAT IT LOOKS LIKE */}
       <section className="mentorsSection" aria-label="What mentoring looks like">
         <div className="mentorsSectionHead">
-          <h2>What mentoring looks like</h2>
+          <h2>What Mentoring Looks Like</h2>
           <p>
-            Mentors coach 1–2 students through a semester-long engineering journey—helping them
+            Mentors coach 1–2 students through a semester-long engineering journey, helping them
             troubleshoot, iterate, and communicate their work.
           </p>
         </div>
 
         <div className="mentorsTwoCol">
           <div className="mentorsChecklist">
-            <div className="mentorsCheck">Coach 1–2 students through challenges</div>
-            <div className="mentorsCheck">Guide debugging and structured problem-solving</div>
-            <div className="mentorsCheck">Support code + electronics + fabrication workflows</div>
-            <div className="mentorsCheck">Help students prep for Demo Day presentation</div>
+            <div className="mentorsCheck">Coach 1–2 Students Through Challenges</div>
+            <div className="mentorsCheck">Guide Debugging And Structured Problem-Solving</div>
+            <div className="mentorsCheck">Support Code + Electronics + Fabrication Workflows</div>
+            <div className="mentorsCheck">Walk Away With Life Long Skils You'll Use Far Beyond CurioLab</div>
+            
           </div>
 
           <div className="mentorsInfoCard">
@@ -156,7 +157,7 @@ export default function MentorsPage() {
               <span className="mentorsInfoV">Sears think[box], CWRU</span>
             </div>
             <div className="mentorsInfoNote">
-              If your schedule doesn’t align, reach out—future opportunities may be available.
+              If your schedule doesn’t align, reach out — future opportunities may be available.
             </div>
           </div>
         </div>
