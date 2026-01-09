@@ -143,13 +143,13 @@ export default function MentorsPage() {
           </div>
 
           <div className="mentorsInfoCard">
-            <div className="mentorsInfoTitle">Time commitment</div>
+            <div className="mentorsInfoTitle">Time Commitment</div>
             <div className="mentorsInfoRow">
               <span className="mentorsInfoK">Training</span>
               <span className="mentorsInfoV">1–2 hours/week</span>
             </div>
             <div className="mentorsInfoRow">
-              <span className="mentorsInfoK">Project sessions</span>
+              <span className="mentorsInfoK">Project Sessions</span>
               <span className="mentorsInfoV">Saturdays, 1:00–4:00 PM</span>
             </div>
             <div className="mentorsInfoRow">
