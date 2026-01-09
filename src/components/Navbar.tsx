@@ -15,6 +15,7 @@ export default function Navbar() {
           <Link href="/projects">Projects</Link>
           <Link href="/mentors">Mentors</Link>
           <Link href="/students">Students</Link>
+          <Link href="/sponsor-support">Support</Link>
           <Link href="/contact" className="navCta">
             Contact
           </Link>
