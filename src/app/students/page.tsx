@@ -15,15 +15,15 @@ export default function StudentsPage() {
           <div className="studentsCtaRow">
             {/* TODO: replace with your Google Form link */}
             <a className="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ6QDOEuDqhgtCCxAJpK0rnfCVNun8t6Zkgld-BaDxaly-hw/viewform" target="_blank" rel="noreferrer">
-              Apply now →
+              Apply Now →
             </a>
             <Link className="btn ghost" href="/projects">
-              Explore past projects →
+              Explore Past Projects →
             </Link>
           </div>
 
           <p className="studentsTiny">
-            Applications are open now. Deadline: <strong>1/16/26</strong>
+            Applications are open now. Deadline: <strong>1/20/26</strong>
           </p>
         </div>
 
