@@ -21,16 +21,16 @@ export default function MentorsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply now →
+              Apply Now →
             </a>
             <a className="btn ghost" href="#what-to-expect">
-              What to expect
+              What to Expect
             </a>
           </div>
 
           <div className="mentorsQuickFacts" aria-label="Mentor quick facts">
             <div className="mentorsFact">
-              <div className="mentorsFactNum">13 week</div>
+              <div className="mentorsFactNum">13 Week</div>
               <div className="mentorsFactLabel">Semester Long Commitment</div>
             </div>
             <div className="mentorsFact">
@@ -38,7 +38,7 @@ export default function MentorsPage() {
               <div className="mentorsFactLabel">Program Session Hours</div>
             </div>
             <div className="mentorsFact">
-              <div className="mentorsFactNum"> think[box]</div>
+              <div className="mentorsFactNum"> Think[box]</div>
               <div className="mentorsFactLabel">Located at Case Western Reserve University</div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function MentorsPage() {
         <div className="mentorsHeroMedia">
           {/* Put a real image here: public/mentors/hero.jpg */}
           <Image
-            src="/projects/spage2.jpg"
+            src="/projects/iceskate.jpg"
             alt="CurioLab mentors working with students"
             width={1400}
             height={1000}
@@ -70,7 +70,7 @@ export default function MentorsPage() {
 
         <div className="mentorsGrid3">
           <article className="mentorsCard">
-            <h3>Grow your skills</h3>
+            <h3>Grow Your Skills</h3>
             <p>
               As a mentor, you grow alongside your students. Sharpen your technical understanding, 
               strengthen how you communicate complex ideas, and deepen your approach to design, debugging, and problem-solving, skills 
@@ -79,7 +79,7 @@ export default function MentorsPage() {
           </article>
 
           <article className="mentorsCard">
-            <h3>Lead with impact</h3>
+            <h3>Lead With Impact</h3>
             <p>
              Help expand access to engineering for middle and high school students, especially those who haven’t had these opportunities 
              before, and play a role in shaping the next generation of technologists, leaders, and mentors.
@@ -87,7 +87,7 @@ export default function MentorsPage() {
           </article>
 
           <article className="mentorsCard">
-            <h3>Get supported</h3>
+            <h3>Get Supported</h3>
             <p>
               CurioLab also invests in you. Get structured training, weekly materials, and ongoing support from the team, 
               so you’re never unprepared. Share ideas, troubleshoots challenges together, and builds leadership skills in a 
@@ -101,21 +101,21 @@ export default function MentorsPage() {
       <section className="mentorsImageStrip" aria-label="Mentor photos">
         {/* Put these in public/mentors/ */}
         <Image
-          src="/projects/spage2.jpg"
+          src="/projects/presen.jpg"
           alt="Mentors coaching during a session"
           width={1200}
           height={800}
           className="mentorsStripImg"
         />
         <Image
-          src="/projects/spage2.jpg"
+          src="/projects/oneonone.jpg"
           alt="Students collaborating with mentor guidance"
           width={1200}
           height={800}
           className="mentorsStripImg"
         />
         <Image
-          src="/projects/spage2.jpg"
+          src="/projects/demday.jpg"
           alt="Students presenting at Demo Day"
           width={1200}
           height={800}
@@ -166,25 +166,24 @@ export default function MentorsPage() {
       {/* WHO SHOULD APPLY */}
       <section className="mentorsSection" aria-label="Who should apply">
         <div className="mentorsSectionHead">
-          <h2>Who should apply</h2>
+          <h2>Who Should Apply</h2>
           <p>
-            This role is for college students. Prior experience is helpful, but not required—we
-            provide training and resources.
+            This role is especially for college students. Prior experience is helpful, but not required as we
+            provide training and resources for all.
           </p>
         </div>
 
         <div className="mentorsChips" aria-label="Helpful experience areas">
           <span className="chip">Arduino / Python / Java</span>
-          <span className="chip">Circuits + sensors</span>
+          <span className="chip">Circuits + Sensors</span>
           <span className="chip">3D modeling + CAD</span>
-          <span className="chip">Laser cutting</span>
-          <span className="chip">3D printing</span>
-          <span className="chip">Helping others learn</span>
+          <span className="chip">Laser Cutting</span>
+          <span className="chip">3D Printing</span>
         </div>
 
         <div className="mentorsNote">
           Mentors are expected to have intermediate-level knowledge in at least one area (coding,
-          electronics, or CAD/fabrication). All majors are welcome to apply.
+          electronics, or CAD/fabrication). All majors and grades are welcome to apply!
         </div>
       </section>
 
@@ -221,7 +220,7 @@ export default function MentorsPage() {
       <h2>Apply to be a mentor</h2>
       <p>
         Applications are open now for Spring 2026. If you want to teach, lead, and learn alongside a
-        community that supports you—apply below.
+        community that supports you, apply below!
       </p>
 
       <div className="mentorsApplyRow">
@@ -243,7 +242,7 @@ export default function MentorsPage() {
     {/* RIGHT */}
     <div className="mentorsApplyMedia" aria-label="Mentor session photo">
       <Image
-        src="/projects/spage2.jpg"
+        src="/projects/mentorfirstpic.jpg"
         alt="CurioLab mentors working with students at a session"
         width={1200}
         height={900}

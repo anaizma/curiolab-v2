@@ -66,7 +66,7 @@ export default function StudentsPage() {
       <section className="studentsSection" aria-label="What you’ll learn">
         
         <div className="studentsSectionHead">
-          <h2>What you’ll learn</h2>
+          <h2>What You’ll Learn</h2>
           <p>
             You’ll pick up core engineering skills and more importantly, learn how to think through
             unfamiliar problems and troubleshoot when things don’t work (because that’s the real skill).
@@ -89,7 +89,7 @@ export default function StudentsPage() {
 
         <div className="studentsLearnGrid">
           <div className="studentsCard">
-            <h3>Code fundamentals</h3>
+            <h3>Code Fundamentals</h3>
             <p>
               Learn how to read and write code with structure, variables, conditionals, functions, and
               debugging habits that help you work independently.
@@ -97,7 +97,7 @@ export default function StudentsPage() {
           </div>
 
           <div className="studentsCard">
-            <h3>Circuits + electronics</h3>
+            <h3>Circuits + Electronics</h3>
             <p>
               Work with inputs/outputs, sensors, and wiring fundamentals. You’ll learn how to test,
               isolate issues, solder, and fix real hardware problems.
@@ -105,7 +105,7 @@ export default function StudentsPage() {
           </div>
 
           <div className="studentsCard">
-            <h3>CAD + fabrication</h3>
+            <h3>CAD + Fabrication</h3>
             <p>
               Design parts in CAD, then bring them to life with laser cutting and 3D printing, turning
               ideas into physical components you can iterate on.
@@ -223,10 +223,10 @@ export default function StudentsPage() {
 
             <div className="studentsCtaRow">
               <a className="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ6QDOEuDqhgtCCxAJpK0rnfCVNun8t6Zkgld-BaDxaly-hw/viewform" target="_blank" rel="noreferrer">
-                Apply now →
+                Apply Now →
               </a>
               <Link className="btn ghost" href="/projects">
-                See what students make →
+                See What Students Make →
               </Link>
             </div>
 

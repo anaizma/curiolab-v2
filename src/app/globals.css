@@ -709,7 +709,7 @@ a:hover { text-decoration: none; }
 
 .studentsTitle{
   margin: 0;
-  font-size: clamp(38px, 4.6vw, 62px);
+  font-size: clamp(40px, 5vw, 64px);
   font-weight: 900;
   letter-spacing: -0.02em;
 }
@@ -718,7 +718,7 @@ a:hover { text-decoration: none; }
   margin: 12px 0 0;
   max-width: 70ch;
   color: rgba(11, 18, 32, 0.78);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
@@ -732,7 +732,7 @@ a:hover { text-decoration: none; }
 .studentsTiny{
   margin-top: 10px;
   color: rgba(11, 18, 32, 0.60);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* Quick facts card */
@@ -755,7 +755,7 @@ a:hover { text-decoration: none; }
 
 .studentsFactsTitle{
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 900;
   letter-spacing: -0.01em;
 }
@@ -764,7 +764,7 @@ a:hover { text-decoration: none; }
   margin-top: 6px;
   color: rgba(11, 18, 32, 0.72);
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .studentsFactsGrid{
@@ -786,7 +786,7 @@ a:hover { text-decoration: none; }
 }
 
 .studentsFactLabel{
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(11, 18, 32, 0.55);
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -806,7 +806,7 @@ a:hover { text-decoration: none; }
 
 .studentsSectionHead h2{
   margin: 0;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 900;
   letter-spacing: -0.01em;
 }
@@ -837,7 +837,7 @@ a:hover { text-decoration: none; }
 
 .studentsCard h3{
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -845,6 +845,7 @@ a:hover { text-decoration: none; }
   margin: 10px 0 0;
   color: rgba(11, 18, 32, 0.72);
   line-height: 1.65;
+  font-size: 16px;
 }
 
 /* Support callouts */
@@ -853,6 +854,7 @@ a:hover { text-decoration: none; }
   display: grid;
   gap: 14px;
   grid-template-columns: 1fr 1fr;
+  
 }
 
 .studentsCallout{
@@ -861,12 +863,13 @@ a:hover { text-decoration: none; }
   backdrop-filter: blur(10px);
   border-radius: 22px;
   padding: 16px;
+  font-size: 16px;
 }
 
 .studentsCallout h3{
   margin: 0;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 900; 
 }
 
 .studentsCallout p{
@@ -906,14 +909,14 @@ a:hover { text-decoration: none; }
   background: var(--accent-soft);
   color: rgba(91, 108, 255, 0.92);
   border: 1px solid rgba(91, 108, 255, 0.22);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
   letter-spacing: 0.02em;
 }
 
 .studentsStepCard h3{
   margin: 0;
-  font-size: 18px;
+  font-size: 18.5px;
   font-weight: 900;
 }
 
@@ -1062,13 +1065,13 @@ a:hover { text-decoration: none; }
 .mentorsLead{
   margin: 14px 0 0;
   max-width: 72ch;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: rgba(11, 18, 32, 0.74);
 }
 
 .mentorsCtaRow{
-  margin-top: 18px;
+  margin-top: 27px;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -1076,7 +1079,7 @@ a:hover { text-decoration: none; }
 }
 
 .mentorsQuickFacts{
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
@@ -1127,7 +1130,7 @@ a:hover { text-decoration: none; }
 
 .mentorsSectionHead h2{
   margin: 0;
-  font-size: 28px;
+  font-size: 29px;
   letter-spacing: -0.01em;
   font-weight: 900;
 }
@@ -1137,11 +1140,11 @@ a:hover { text-decoration: none; }
   max-width: 78ch;
   color: rgba(11, 18, 32, 0.72);
   line-height: 1.7;
-  font-size: 16.5px;
+  font-size: 18px;
 }
 
 .mentorsGrid3{
-  margin-top: 16px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -1159,7 +1162,7 @@ a:hover { text-decoration: none; }
 
 .mentorsCard h3{
   margin: 0;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 900;
 }
 
@@ -1167,6 +1170,8 @@ a:hover { text-decoration: none; }
   margin: 10px 0 0;
   color: rgba(11, 18, 32, 0.72);
   line-height: 1.55;
+  font-size: 15px;
+
 }
 
 /* IMAGE STRIP */
@@ -1199,6 +1204,7 @@ a:hover { text-decoration: none; }
 .mentorsChecklist{
   display: grid;
   gap: 10px;
+  font-size: 15.5 px;
 }
 
 .mentorsCheck{
@@ -1219,6 +1225,7 @@ a:hover { text-decoration: none; }
   border-radius: 22px;
   padding: 16px;
   box-shadow: 0 12px 34px rgba(11,18,32,0.08);
+  font-size: 16.3px;
 }
 
 .mentorsInfoTitle{
@@ -1272,6 +1279,8 @@ a:hover { text-decoration: none; }
   border: 1px solid rgba(11,18,32,0.10);
   color: rgba(11,18,32,0.72);
   line-height: 1.6;
+  font-size: 16.8px;
+
 }
 
 /* QUOTES */
