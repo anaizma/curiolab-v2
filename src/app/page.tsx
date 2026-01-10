@@ -123,7 +123,7 @@ export default function Home() {
     <div className="featureBody">
       <h3 className="featureTitle">Alarm Clock</h3>
       <p className="featureDesc">
-        Inputs, outputs, timing, and making something reliable.
+        Inputs, outputs, timing, and making something reliable to use each morning.
       </p>
 
       <div className="featureMeta">
@@ -145,9 +145,9 @@ export default function Home() {
     </div>
 
     <div className="featureBody">
-      <h3 className="featureTitle">Lock Box</h3>
+      <h3 className="featureTitle">Electonic Safe</h3>
       <p className="featureDesc">
-        Mechanism + code + debugging until it works every time.
+        Mechanism + code + debugging until it safe and secure.
       </p>
 
       <div className="featureMeta">

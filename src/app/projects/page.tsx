@@ -4,10 +4,10 @@ import Link from "next/link";
 const projects = [
   {
     slug: "lock-box",
-    title: "Lock Box",
+    title: "Electronic Safe",
     desc: "Mechanism + code + debugging until it works.",
     description:
-      "Students designed and built a secure lock box from scratch using self-designed CAD models to fabricate laser-cut panels and 3D-printed components. They assembled the electronics and developed embedded code implementing keypad input, state-based logic, iterative debugging, and a secure locking mechanism.",
+      "Students designed and built a secure electronic safe from scratch using self-designed CAD models to fabricate laser-cut panels and 3D-printed components. They assembled the electronics and developed embedded code implementing keypad input, state-based logic, iterative debugging, and a secure locking mechanism.",
     img: "/projects/safebox.jpg",
   },
   {
@@ -35,9 +35,9 @@ export default function ProjectsPage() {
       <header className="projectsHeader">
         <h1 className="projectsTitle">Projects</h1>
         <p className="projectsSubtitle">
-          Each semester, students build toward a final project over ~12 weeks—learning code fundamentals,
+          Each semester, students build toward a final project over ~12 weeks — learning code fundamentals,
           circuits & electronics, CAD/3D modeling, laser cutting, 3D printing, and rapid prototyping.
-          Mentors guide every step from first build to Demo Day, making sure no student is left behind.
+          Mentors guide them every step of the way from first build to Demo Day, making sure no student is left behind.
         </p>
       </header>
 
