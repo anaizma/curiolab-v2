@@ -77,7 +77,7 @@ const TEAM: Member[] = [
 
     {
     name: "Rober Carrillo",
-    role: "Curio Deeveloper",
+    role: "Curio Developer",
     photo: "/team/esme.jpg",
     socials: {
       linkedin: "https://linkedin.com/",
@@ -87,7 +87,7 @@ const TEAM: Member[] = [
 
     {
     name: "Pauls Olins",
-    role: "Curio Deeveloper",
+    role: "Curio Developer",
     photo: "/projects/pauls.jpg",
     socials: {
       linkedin: "https://linkedin.com/",
