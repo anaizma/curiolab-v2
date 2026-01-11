@@ -85,6 +85,16 @@ const TEAM: Member[] = [
     },
   },
 
+    {
+    name: "Pauls Olins",
+    role: "Curio Deeveloper",
+    photo: "/projects/pauls.jpg",
+    socials: {
+      linkedin: "https://linkedin.com/",
+      github: "https://github.com/",
+    },
+  },
+
 ];
 
 function IconGithub() {
