@@ -38,7 +38,7 @@ const TEAM: Member[] = [
   {
     name: "Esme Qiang",
     role: "Vice President",
-    photo: "/team/esme.jpg",
+    photo: "/projects/esme.jpeg",
     socials: {
       linkedin: "https://linkedin.com/",
       github: "https://github.com/",
