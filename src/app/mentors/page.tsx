@@ -232,7 +232,7 @@ export default function MentorsPage() {
         >
           Apply now →
         </a>
-        <span className="mentorsDeadline">Deadline: 1/20/2026</span>
+        <span className="mentorsDeadline">Deadline: 1/22/2026</span>
       </div>
 
       <div className="mentorsApplyHint">
