@@ -1,6 +1,8 @@
 // src/app/our-team/page.tsx
 import Image from "next/image";
 
+
+
 type Social = {
   github?: string;
   linkedin?: string;
@@ -30,8 +32,8 @@ const TEAM: Member[] = [
     photo: "/projects/ana pic.png",
     socials: {
       linkedin: "https://linkedin.com/in/anaizma",
-      github: "https://github.com/",
-      website: "https://acuriolab.org",
+      github: "https://github.com/anaizma",
+      website: "https://anaizma.com",
     },
   },
 
@@ -43,6 +45,7 @@ const TEAM: Member[] = [
       linkedin: "https://linkedin.com/",
       github: "https://github.com/",
     },
+
   },
 
     {
@@ -50,7 +53,7 @@ const TEAM: Member[] = [
     role: "Finance / Operations",
     photo: "/projects/Khang pic.png",
     socials: {
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/vinh-khang-luu-19a321345/",
       github: "https://github.com/",
     },
   },
