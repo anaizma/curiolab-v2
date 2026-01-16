@@ -54,7 +54,7 @@ export default function Home() {
       <section className="what">
         <div className="whatInner">
           <div className="whatLeft">
-            <h2 className="whatTitle">Who Are We</h2>
+            <h2 className="whatTitle">Who We Are</h2>
             <div className="whatRule" />
           </div>
 
@@ -145,7 +145,7 @@ export default function Home() {
     </div>
 
     <div className="featureBody">
-      <h3 className="featureTitle">Electonic Safe</h3>
+      <h3 className="featureTitle">Electronic Safe</h3>
       <p className="featureDesc">
         Mechanism + code + debugging until it safe and secure.
       </p>
