@@ -83,7 +83,7 @@ const TEAM: Member[] = [
     role: "Curio Developer",
     photo: "/projects/rober.png",
     socials: {
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/rober-carrillo/",
       github: "https://github.com/",
     },
   },
@@ -93,8 +93,8 @@ const TEAM: Member[] = [
     role: "Curio Developer",
     photo: "/projects/pauls.jpg",
     socials: {
-      linkedin: "https://linkedin.com/",
-      github: "https://github.com/",
+      linkedin: "https://www.linkedin.com/in/paulsolins/",
+      github: "https://github.com/Pygmypuff",
     },
   },
 
