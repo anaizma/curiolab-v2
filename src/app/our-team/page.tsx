@@ -42,7 +42,7 @@ const TEAM: Member[] = [
     role: "Vice President",
     photo: "/projects/esme.jpeg",
     socials: {
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/esmeralda-qiang-59884822a/",
       github: "https://github.com/",
     },
 
@@ -63,7 +63,7 @@ const TEAM: Member[] = [
     role: "Public Relations Director",
     photo: "/projects/tienna pic.png",
     socials: {
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/tiennazeng/",
       github: "https://github.com/",
     },
   },
