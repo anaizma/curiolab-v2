@@ -23,7 +23,7 @@ export default function StudentsPage() {
           </div>
 
           <p className="studentsTiny">
-            Applications are open now. Deadline: <strong>1/18/26</strong>
+            Applications are open now. Deadline: <strong>2/6/26</strong>
           </p>
         </div>
 
@@ -231,7 +231,7 @@ export default function StudentsPage() {
             </div>
 
             <p className="studentsTiny">
-              Deadline: <strong>1/18/26</strong>
+              Deadline: <strong>1/6/26</strong>
             </p>
           </div>
 
