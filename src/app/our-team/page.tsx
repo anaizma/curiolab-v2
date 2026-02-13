@@ -49,7 +49,7 @@ const TEAM: Member[] = [
   },
 
     {
-    name: "Vihn-Khang Luu",
+    name: "Vinh-Khang Luu",
     role: "Finance / Operations",
     photo: "/projects/Khang pic.png",
     socials: {
